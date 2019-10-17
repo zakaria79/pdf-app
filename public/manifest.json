@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "URL vers PDF",
+  "name": "Converti une URL au format PDF",
   "icons": [
     {
       "src": "favicon.ico",
