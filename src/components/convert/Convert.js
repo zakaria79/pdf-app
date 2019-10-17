@@ -69,9 +69,7 @@ const Convert = props => {
         </div>
         {isPdfReady && (
           <div className={classes.buttonBlock}>
-            <a
-              href="http://localhost:5000/pdf/converted-file"
-              download="file.pdf">
+            <a href="/pdf/converted-file" download="file.pdf">
               <Button variant="contained" color="primary">
                 <PictureAsPdfIcon />
               </Button>
