@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
   },
   textField: {
-    width: '20rem',
+    width: '100%',
   },
   formBlock: {
     padding: '2rem',
@@ -40,9 +40,8 @@ const Convert = props => {
   };
   const handleSubmit = async () => {
     try {
-      const result = await axios.post('/pdf/convert', values);
+      axios.post('/pdf/convert', values);
       setIsPdfReady(true);
-      // window.location = 'http://localhost:5000/pdf/converted-file';
     } catch (e) {
       console.log(e);
     }
